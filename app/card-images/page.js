@@ -40,7 +40,7 @@ export default function CardImages() {
       </div>
       {/* Our Promotions */}
 
-      <div className=" flex justify-between items-center">
+      <div className=" mb-2 md:flex md:justify-between items-center">
         <h1 className="text-black text-3xl md:text-4xl mb-10 font-bold mt-20">
           Our Promotions
         </h1>
