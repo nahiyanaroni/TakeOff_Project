@@ -4,7 +4,7 @@ export default function TopAndAdvantage() {
   return (
     <div>
       {/* Top Airlines Are With Us */}
-      <div class=" h-auto border border-red-500 bg-gradient-to-r from-[#053777] via-[#053777] to-[#00AEB3] bg-cover bg-center">
+      <div className=" h-auto border border-red-500 bg-gradient-to-r from-[#053777] via-[#053777] to-[#00AEB3] bg-cover bg-center">
         <div className="px-6 md:px-16 lg:px-40 py-30 top-0   ">
           <h1 className=" text-4xl font-bold ml-5 mb-5">
             Top Airlines Are With Us

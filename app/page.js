@@ -3,6 +3,7 @@ import Banner from "./Banner/page";
 import CardImages from "./card-images/page";
 import AdvantageSection from "./TakeoffAdvantage/page";
 import HalpSupport from "./help/page";
+import Footer from "./Footer/page";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <TopAndAdvantage/>
       <AdvantageSection/>
       <HalpSupport/>
+      <Footer/>
     </div>
   );
 }
