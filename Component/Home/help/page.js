@@ -25,7 +25,7 @@ export default function HalpSupport() {
     <div className="px-6 md:px-16 lg:px-40 py-20 bg-gradient-to-r from-yellow-200 to-blue-300">
       <h1 className="text-2xl text-black mt-3">Quick Links</h1>
       <h1 className="text-black mb-10 text-4xl font-bold">Need Some help?</h1>
-      <div className="grid md:grid-cols-3 gap-6 w-full">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 w-full">
   {supportItems.map((item, index) => (
     <Support
       key={index}

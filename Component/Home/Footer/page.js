@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bg-gradient-to-r from-[#002453] to-[#2b476c] px-6 md:px-16 pb-0 lg:px-40 py-20">
+    <div className="bg-gradient-to-r from-[#002453] to-[#2b476c] px-6 md:px-16 pb-0 xl:px-40 py-20">
       <div className="grid grid-cols-1 md:grid-cols-4 justify-between gap-20 border-b-2 border-blue-300 pb-10">
         <div className="flex flex-col ">
           <h1
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-0 flex flex-col-reverse  md:flex-row justify-between items-center ">
+      <div className="mt-0 flex flex-col-reverse  xl:flex-row justify-between items-center ">
         <p className="text-gray-200 mb-10 text-center mt-10">
           © 2023 TakeOff. All rights reserved.
         </p>

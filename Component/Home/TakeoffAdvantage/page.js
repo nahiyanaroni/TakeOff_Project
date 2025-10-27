@@ -38,9 +38,9 @@ export default function AdvantageSection() {
   ];
 
   return (
-    <div className="px-6 md:px-16 lg:px-40 py-20 top-0">
+    <div className="px-6 md:px-16 xl:px-40 py-20 top-0">
       <h1 className="text-black mb-10 text-4xl font-bold">The TakeOff Advantage</h1>
-      <div className="grid md:grid-cols-3 gap-6 w-full">
+      <div className="grid md:grid-cols-2   xl:grid-cols-3 gap-6 w-full">
         {advantages.map((adv, i) => (
           <AdvantageCard
             key={i}

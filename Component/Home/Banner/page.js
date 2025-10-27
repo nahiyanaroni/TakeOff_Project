@@ -13,7 +13,7 @@ export default function Banner() {
         src="/bg.png"
         height={800}
         width={1400}
-        className="w-full object-cover  h-[900px] md:h-[950px] lg:h-[800px]"
+        className="w-full object-cover  h-[900px] md:h-[950px] xl:h-[800px]"
         alt="Background"
       />
       </figure>
@@ -21,13 +21,13 @@ export default function Banner() {
       {/* Overlay content */}
       <div className="absolute top-0 left-0 w-full h-full">
         {/* Navbar */}
-      <div className="navbar border-b border-gray-400 px-6 md:px-16 lg:px-40">
+      <div className="navbar border-b border-gray-400 px-6 md:px-16 xl:px-40">
           <div className="navbar-start">
             <div className="dropdown">
                <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost lg:hidden"
+                className="btn btn-ghost xl:hidden"
                >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Banner() {
             <img src="Group.png" alt="Logo" className="h-10" />
           </div>
 
-          <div className="navbar-center hidden lg:flex">
+          <div className="navbar-center hidden xl:flex">
             <ul className="menu menu-horizontal px-1 gap-4">
               <li>
                 <a>About Us</a>
@@ -77,7 +77,7 @@ export default function Banner() {
           </div>
 
           <div className="navbar-end">
-            <a className="btn bg-white border-none rounded-lg text-black">
+            <a className="btn bg-white border-none rounded-xl text-black">
               <img src="flag.png" alt="flag" className="w-5 h-5 mr-2" /> English
               <FaChevronUp />
             </a>
@@ -85,29 +85,29 @@ export default function Banner() {
         </div>
 
         {/* Banner Content */}
-        <div className="grid grid-cols-1 lg:grid-col-2   justify-center items-center px-6 md:px-16   lg:px-40 py-16 gap-10">
+        <div className="grid grid-cols-1 xl:grid-cols-2   justify-center items-center px-6 md:px-16   xl:px-40 py-16 gap-10">
           {/* Left text content */}
-          <div className="w-full lg:w-1/2">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
+          <div className="w-full ">
+            <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold mb-6 text-white leading-tight">
               Enjoy Holiday By Traveling
             </h1>
-            <p className="text-base md:text-lg text-white mb-10">
+            <p className="text-base md:text-xl text-white mb-10">
               Fine Hotel And Ticket With best experience. Intrinsically
               architect supercore competencies vis-a-vis interactive
               partnerships.
             </p>
             <div className="flex flex-col md:flex-row gap-4">
-              <button className="btn bg-gradient-to-r from-[#F6AA38] to-[#FFD335] border-none rounded-sm text-black text-lg px-12 py-8 flex items-center gap-2">
+              <button className="btn bg-gradient-to-r from-[#F6AA38] to-[#FFD335] border-none rounded-sm text-black text-xl px-12 py-8 flex items-center gap-2">
                 <RxEnter /> Login
               </button>
-              <button className="btn bg-gradient-to-r from-[#004CAE] to-[#0320DA] border-none rounded-sm text-lg px-12 py-8 text-white flex items-center gap-2">
+              <button className="btn bg-gradient-to-r from-[#004CAE] to-[#0320DA] border-none rounded-sm text-xl px-12 py-8 text-white flex items-center gap-2">
                 <LuUserRoundPlus /> Register
               </button>
             </div>
           </div>
 
           {/* Right image & promo */}
-          <div className="w-full lg:w-1/2 bg-black/20 backdrop-blur-sm p-6 md:p-12 rounded-3xl flex flex-col items-center">
+          <div className="w-full  bg-black/20 backdrop-blur-sm p-6 md:p-12 rounded-3xl flex flex-col items-center">
             <img src="fly.png" alt="Fly" className="w-full max-w-xs mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 bg-black/50 px-6 py-3 rounded-2xl text-center">
               14% discount
