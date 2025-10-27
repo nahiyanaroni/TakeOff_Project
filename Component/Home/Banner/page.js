@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import React from "react";
 import { FaChevronUp } from "react-icons/fa6";
 import { LuUserRoundPlus } from "react-icons/lu";
@@ -6,23 +8,27 @@ import { RxEnter } from "react-icons/rx";
 export default function Banner() {
   return (
     <div className="relative">
-      <img
+      <figure>
+        <Image 
         src="/bg.png"
-        className="w-full object-cover h-[900px] md:h-[500px] lg:h-[700px]"
+        height={800}
+        width={1400}
+        className="w-full object-cover  h-[900px] md:h-[950px] lg:h-[800px]"
         alt="Background"
       />
+      </figure>
 
       {/* Overlay content */}
       <div className="absolute top-0 left-0 w-full h-full">
         {/* Navbar */}
-        <div className="navbar border-b border-gray-400 px-6 md:px-16 lg:px-40">
+      <div className="navbar border-b border-gray-400 px-6 md:px-16 lg:px-40">
           <div className="navbar-start">
             <div className="dropdown">
-              <div
+               <div
                 tabIndex={0}
                 role="button"
                 className="btn btn-ghost lg:hidden"
-              >
+               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -72,14 +78,14 @@ export default function Banner() {
 
           <div className="navbar-end">
             <a className="btn bg-white border-none rounded-lg text-black">
-              <img src="flag.png" alt="flag" className="w-5 h-5 mr-2" /> English{" "}
+              <img src="flag.png" alt="flag" className="w-5 h-5 mr-2" /> English
               <FaChevronUp />
             </a>
           </div>
         </div>
 
         {/* Banner Content */}
-        <div className="flex flex-col lg:flex-row justify-center items-center px-6 md:px-16   lg:px-40 py-16 gap-10">
+        <div className="grid grid-cols-1 lg:grid-col-2   justify-center items-center px-6 md:px-16   lg:px-40 py-16 gap-10">
           {/* Left text content */}
           <div className="w-full lg:w-1/2">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">

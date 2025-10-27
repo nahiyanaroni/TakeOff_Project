@@ -1,5 +1,6 @@
 import React from "react";
-import AdvantageCard from "../Component/takeoffadv";
+import AdvantageCard from "../component/takeoffadv";
+
 
 
 export default function AdvantageSection() {

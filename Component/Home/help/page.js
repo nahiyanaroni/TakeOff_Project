@@ -1,5 +1,5 @@
 import React from "react";
-import Support from "../Component/Support";
+import Support from "../component/Support";
 
 export default function HalpSupport() {
   const supportItems = [
