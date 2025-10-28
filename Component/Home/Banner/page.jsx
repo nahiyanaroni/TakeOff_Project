@@ -59,11 +59,11 @@ export default function Banner() {
                 </li>
               </ul>
             </div>
-            <img src="Group.png" alt="Logo" className="h-10" />
+            <img src="Group.png" alt="Logo" className="h-13" />
           </div>
 
           <div className="navbar-center hidden xl:flex">
-            <ul className="menu menu-horizontal px-1 gap-4">
+            <ul className="menu menu-horizontal text-lg font-semibold text-white mr-210 px-1 gap-4">
               <li>
                 <a>About Us</a>
               </li>

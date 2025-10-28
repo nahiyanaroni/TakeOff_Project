@@ -1,5 +1,5 @@
 import React from "react";
-import Support from "../component/Support";
+
 
 export default function HalpSupport() {
   const supportItems = [
@@ -26,13 +26,20 @@ export default function HalpSupport() {
       <h1 className="text-2xl text-black mt-3">Quick Links</h1>
       <h1 className="text-black mb-10 text-4xl font-bold">Need Some help?</h1>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 w-full">
-  {supportItems.map((item, index) => (
-    <Support
-      key={index}
-      imgSrc={item.imgSrc}
-      title={item.title}
-      description={item.description}
-    />
+  {supportItems.map((item, i) => (
+   <div
+   key={i} className=" bg-white rounded-xl shadow-md p-6 cursor-pointer  hover:scale-110 transition ">
+     <div className='flex  '>
+     
+       <img src={item.imgSrc} alt={`download ${i+1}`} className="w-16 h-16 object-contain" />
+      <h1 className="text-2xl text-black font-bold mt-4">
+        {item.title}
+      </h1>
+     </div>
+      <p className="text-gray-600 mt-2">
+        {item.description}
+      </p>
+    </div>
   ))}
 </div>
     </div>

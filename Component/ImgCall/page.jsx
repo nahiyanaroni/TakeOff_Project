@@ -16,14 +16,14 @@ export default function ImgCall() {
   const [photos, setPhotos] = useState([]);
 
   const autoplay = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 4000, stopOnInteraction: true })
   );
 
 
-  // ✅ API Call
+
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/photos") // free image API
+      .get("https://jsonplaceholder.typicode.com/photos") 
       .then((res) => setPhotos(res.data))
       .catch((err) => console.error("Error fetching images:", err));
   }, []);
@@ -34,7 +34,7 @@ export default function ImgCall() {
         Exclusive Offer
       </h1>
 
-      {/* ✅ Carousel */}
+   
       <Carousel className="w-full max-w-16xl mx-auto"
        plugins={[autoplay.current]}
       opts={{ loop: true }}>

@@ -3,14 +3,6 @@ import React from 'react'
 export default function FareCard 
 () {
 
-    // const fear=[
-    //     {
-    //         district:"Rajshahi",
-    //         img:"Group 1000006306.png",
-    //         pakNo:"18 Packages"
-    //     }
-    // ]
-
   return (
    
  <div className='px-6 md:px-16 lg:px-40 py-16 bg-[#f4faff]'>

@@ -2,6 +2,7 @@ import React from "react";
 
 export default function TopAndAdvantage() {
   return (
+    
     <div>
       {/* Top Airlines Are With Us */}
       <div className=" h-auto border border-red-500 bg-gradient-to-r from-[#053777] via-[#053777] to-[#00AEB3] bg-cover bg-center">
