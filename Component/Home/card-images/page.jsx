@@ -58,7 +58,7 @@ export default function CardImages() {
       </div>
 
       {/* Promo Cards */}
-      <div className="grid sm:grid-cols-1 xl:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
         {cardData.map((card, i) => (
           <div
             key={i}
