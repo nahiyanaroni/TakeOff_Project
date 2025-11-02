@@ -1,4 +1,6 @@
+
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { LuUserRoundPlus } from "react-icons/lu";
 import { RxEnter } from "react-icons/rx";
@@ -33,14 +35,21 @@ export default function Banner() {
               architect supercore competencies vis-a-vis interactive
               partnerships.
             </p>
-            <div className="flex flex-col md:flex-row gap-4">
-              <button className="btn bg-gradient-to-r from-[#F6AA38] to-[#FFD335] border-none rounded-sm text-black text-xl px-12 py-8 flex items-center gap-2">
-                <RxEnter /> Login
-              </button>
-              <button className="btn bg-gradient-to-r from-[#004CAE] to-[#0320DA] border-none rounded-sm text-xl px-12 py-8 text-white flex items-center gap-2">
-                <LuUserRoundPlus /> Register
-              </button>
-            </div>
+             <div className="flex flex-col md:flex-row gap-4">
+      {/* Login Button */}
+      <Link href="/login">
+        <button className="btn bg-gradient-to-r from-[#F6AA38] to-[#FFD335] border-none rounded-sm text-black text-xl px-12 py-8 flex items-center gap-2">
+          <RxEnter /> Login
+        </button>
+      </Link>
+
+      {/* Register Button */}
+      <Link href="/register">
+        <button className="btn bg-gradient-to-r from-[#004CAE] to-[#0320DA] border-none rounded-sm text-xl px-12 py-8 text-white flex items-center gap-2">
+          <LuUserRoundPlus /> Register
+        </button>
+      </Link>
+    </div>
           </div>
 
           {/* Right image & promo */}

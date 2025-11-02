@@ -15,15 +15,23 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // 🧠 Determine color logic
+  const isHome = pathname === "/";
+  const baseColor = isHome
+    ? isScrolled
+      ? "bg-white" // home page scrolled → white
+      : "bg-transparent" // home page default → transparent
+    : isScrolled
+    ? "bg-white" // other pages scrolled → white
+    : "bg-gray-100"; // other pages default → gray
+
   return (
     <div
-      className={`navbar px-6 md:px-12 xl:px-40 border-b transition-all duration-300 z-50 ${
-        isScrolled
-          ? "fixed top-0 left-0 w-full bg-white shadow-md border-gray-300"
-          : "absolute top-0 left-0 w-full bg-transparent border-gray-400"
+      className={`navbar fixed top-0 left-0 w-full px-6 md:px-12 xl:px-40 border-b transition-all duration-300 z-50 ${baseColor} ${
+        isScrolled ? "shadow-md border-gray-300" : "border-gray-400"
       }`}
     >
-      {/* ✅ Navbar Start */}
+      {/* Navbar Start */}
       <div className="navbar-start">
         {/* Mobile Menu */}
         <div className="dropdown lg:hidden">
@@ -65,15 +73,17 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/* ✅ Logo */}
-       <Link href="/" ><img src="Group.png" alt="Logo" className="h-12 w-auto" /></Link>
+        {/* Logo */}
+        <Link href="/">
+          <img src="Group.png" alt="Logo" className="h-12 w-auto" />
+        </Link>
       </div>
 
-      {/* ✅ Navbar Center — only visible on large screens */}
-      <div className="navbar-start  hidden lg:flex">
+      {/* Navbar Center */}
+      <div className="navbar-center hidden lg:flex">
         <ul
           className={`menu menu-horizontal text-lg font-semibold px-1 gap-8 ${
-            isScrolled ? "text-black" : pathname === "/" ? "text-white" : "text-black"
+            isHome && !isScrolled ? "text-white" : "text-black"
           }`}
         >
           <li>
@@ -109,12 +119,18 @@ export default function Navbar() {
         </ul>
       </div>
 
-      {/* ✅ Navbar End — always visible (button) */}
+      {/* Navbar End */}
       <div className="navbar-end">
-        <button className="btn bg-white border-none rounded-xl text-black flex items-center gap-2 shadow-sm">
+        <button
+          className={`btn border-none rounded-xl flex items-center gap-2 shadow-sm ${
+            isHome && !isScrolled
+              ? "bg-transparent text-white"
+              : "bg-gray-100 text-black"
+          }`}
+        >
           <img src="flag.png" alt="flag" className="w-5 h-5" />
           English
-          <FaChevronUp className="text-gray-600" />
+          <FaChevronUp className={isHome && !isScrolled ? "text-white" : "text-gray-600"} />
         </button>
       </div>
     </div>

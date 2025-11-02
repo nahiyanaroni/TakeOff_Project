@@ -2,7 +2,7 @@ import React from 'react'
 export default function About () {
   return (
     <div className="bg-gray-100 flex justify-center w-full h-full "> 
-    <div className=' m-0 p-0 mb-40 pb-40 mt-30   xl:ml-120 xl:mr-120 bg-white md:ml-20 md:mr-20'>
+    <div className=' m-0 p-0 mb-40 pb-40 mt-30   xl:ml-120 xl:mr-120 bg-white md:ml-50 md:mr-50 lg:ml-80 lg:mr-80'>
         <div className='bg-amber-300 p-4  text-white text-lg text-center'><h1 >Welcome to TakeOff Travels!!</h1></div>
         <div className='p-4'>
             <h1 className='mt-4'>Welcome to TakeOff Travels!!</h1>
