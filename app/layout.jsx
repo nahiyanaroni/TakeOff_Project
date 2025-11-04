@@ -4,11 +4,14 @@ import Footer from "@/Component/Home/Footer/page";
 import React from "react";
 import PropTypes from "prop-types";
 import Navbar from "@/Component/Home/navbar/navbar";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -25,11 +28,28 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* ✅ Navbar */}
         <Navbar />
-        <main>
-          {children}
-        </main>
+
+        {/* ✅ Main Content */}
+        <main>{children}</main>
+
+        {/* ✅ Footer */}
         <Footer />
+
+        {/* ✅ Toast Notifications */}
+        <ToastContainer
+          position="top-right"
+          autoClose={4000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -33,14 +34,16 @@ export default function Footer() {
         </div>
         <div>
           <h1
-            className="relative inline-block text-xl font-bold text-white mb-4 
+            className=" grid-cols-1 relative inline-block text-xl font-bold text-white mb-4 
   after:content-[''] after:block after:w-10 after:h-[2px] after:bg-blue-400 after:mt-2"
           >
             Quick Links
           </h1>
-          <p className="text-gray-200 mt-8">About Us</p>
-          <p className="text-gray-200 mt-2 ">Contact Us</p>
-          <p className="text-gray-200 mt-2">Bank Details</p>
+          <div className="grid grid-cols-1 gap-1">
+            <Link href="/" className="text-gray-200 mt-8">Home</Link>
+          <Link href="/about" className="text-gray-200 mt-2 "> About</Link>
+          <Link href="/contact" className="text-gray-200 mt-2"> Contact</Link>
+          </div>
         </div>
         <div className=" ">
           <h1
@@ -69,21 +72,29 @@ export default function Footer() {
         </p>
 
         <div className="md:flex md:gap-1">
-          <button className="hover:shadow-lg hover:shadow-indigo-800/100 transition  flex gap-2 p-3 bg-gray-800 justify-center items-center w-50 text-white  mb-2 md:rounded-l-lg  ">
+          <button className="hover:shadow-lg cursor-pointer hover:shadow-indigo-800/100 transition  flex gap-2 p-3 bg-gray-800 justify-center items-center w-50 text-white  mb-2 md:rounded-l-lg  ">
             <h1>Verified by</h1>
             <img src="varify.png" alt="Description" className="" />
           </button>
 
-          <button className=" hover:shadow-lg hover:shadow-indigo-800/100 transition flex gap-2 p-3 bg-gray-800 justify-center items-center w-50 text-white  mb-2 md:rounded-r-lg  ">
+          <button className=" hover:shadow-lg hover:shadow-indigo-800/100 transition flex gap-2 p-3 bg-gray-800 cursor-pointer justify-center items-center w-50 text-white  mb-2 md:rounded-r-lg  ">
             <h1>Authorized by</h1>
             <img src="iata.png" alt="Description" className="" />
           </button>
         </div>
         <div className="flex gap-2 mt-5 mb-5">
-          <img src="twiter.png" alt="twiter" />
-          <img src="youtube.png" alt="youtube" />
-          <img src="facebook.png" alt="facebook" />
-          <img src="in.png" alt="linkedin" />
+          <Link href="https://twitter.com" target="_blank">
+            <img src="twiter.png" alt="twiter" />
+          </Link>
+          <Link href="https://youtube.com" target="_blank">
+            <img src="youtube.png" alt="youtube" />
+          </Link>
+          <Link href="https://facebook.com" target="_blank">
+            <img src="facebook.png" alt="facebook" />
+          </Link>
+          <Link href="https://linkedin.com" target="_blank">
+            <img src="in.png" alt="linkedin" />
+          </Link>
         </div>
       </div>
     </div>

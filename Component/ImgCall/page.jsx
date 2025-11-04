@@ -34,15 +34,15 @@ export default function ImgCall() {
         Exclusive Offer
       </h1>
 
-   
-      <Carousel className="w-full max-w-16xl mx-auto"
+
+      <Carousel className="w-full  max-w-16xl mx-auto"
        plugins={[autoplay.current]}
       opts={{ loop: true }}>
         <CarouselContent>
           {photos.map((img) => (
             <CarouselItem
               key={img.id}
-              className="basis-1/2 md:basis-1/3 xl:basis-1/4"
+              className="basis-1/2 md:basis-1/3  xl:basis-1/4"
             >
               <div className="p-2">
                 <Image
@@ -51,7 +51,7 @@ export default function ImgCall() {
                   alt="Download"
                   width={700}
                   height={500}
-                  className="rounded-2xl object-cover"
+                  className="rounded-2xl cursor-pointer object-cover"
                 />
               </div>
             </CarouselItem>

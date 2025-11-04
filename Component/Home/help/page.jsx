@@ -28,7 +28,7 @@ export default function HalpSupport() {
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 w-full">
   {supportItems.map((item, i) => (
    <div
-   key={i} className=" bg-white rounded-xl shadow-md p-6 cursor-pointer  hover:scale-110 transition ">
+   key={i} className=" bg-white rounded-xl shadow-md p-6 cursor-pointer  transition-transform duration-500 hover:scale-105">
      <div className='flex  '>
      
        <img src={item.imgSrc} alt={`download ${i+1}`} className="w-16 h-16 object-contain" />
