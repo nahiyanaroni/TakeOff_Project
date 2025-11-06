@@ -40,9 +40,9 @@ export default function Footer() {
             Quick Links
           </h1>
           <div className="grid grid-cols-1 gap-1">
-            <Link href="/" className="text-gray-200 mt-8">Home</Link>
-          <Link href="/about" className="text-gray-200 mt-2 "> About</Link>
-          <Link href="/contact" className="text-gray-200 mt-2"> Contact</Link>
+          <Link href="/about" className="text-gray-200 mt-8 "> About</Link>
+          <Link href="/contact" className="text-gray-200 mt-2"> Contact us</Link>
+          <Link href="/bank_details" className="text-gray-200 mt-2">Bank Details</Link>
           </div>
         </div>
         <div className=" ">
@@ -52,17 +52,38 @@ export default function Footer() {
           >
             Payment Method
           </h1>
-          <div className="img-box grid grid-cols-4  mt-8 gap-2">
+          <div className="img-box grid grid-cols-4 cursor-pointer mt-8 gap-2">
+            <Link href="https://bd.visa.com/" target="_blank">
             <img src="visaCard.svg.png" alt="Description" />
-            <img src="Item.png" alt="Description" />
-            <img src="am.png" alt="Description" />
-            <img src="bkash.svg.png" alt="Description" />
-            <img src="Item (1).png" alt="Description" />
-            <img src="Item (2).png" alt="Description" />
-            <img src="Item (3).png" alt="Description" />
-            <img src="Item (4).png" alt="Description" />
-            <img src="Item (5).png" alt="Description" />
-            <img src="Item (6).png" alt="Description" />
+            </Link>
+            <Link href="https://www.mastercard.com/" target="_blank">
+              <img src="Item.png" alt="Description" />
+            </Link>
+            
+            <Link href="https://www.amex.com/" target="_blank">
+              <img src="am.png" alt="Description" />
+            </Link>
+            <Link href="https://www.bkash.com/" target="_blank">
+              <img src="bkash.svg.png" alt="Description" />
+            </Link>
+          <Link href="https://www.nagad.com.bd/" target="_blank">
+              <img src="Item (1).png" alt="Description" />
+            </Link>
+            <Link href="https://www.upaybd.com//" target="_blank">
+              <img src="Item (2).png" alt="Description" />
+            </Link>
+            <Link href="https://www.flytap.com/pt-pt/" target="_blank">
+              <img src="Item (3).png" alt="Description" />
+            </Link>
+         
+              <img src="Item (4).png" alt="Description" />
+           
+            <Link href="https://www.dutchbanglabank.com/" target="_blank">
+              <img src="Item (5).png" alt="Description" />
+            </Link>
+            <Link href="https://www.dinersclub.com/" target="_blank">
+              <img src="Item (6).png" alt="Description" />
+            </Link>
           </div>
         </div>
       </div>
@@ -86,13 +107,13 @@ export default function Footer() {
           <Link href="https://twitter.com" target="_blank">
             <img src="twiter.png" alt="twiter" />
           </Link>
-          <Link href="https://youtube.com" target="_blank">
+          <Link href="https://www.youtube.com/@takeofftravels9509/" target="_blank">
             <img src="youtube.png" alt="youtube" />
           </Link>
-          <Link href="https://facebook.com" target="_blank">
+          <Link href="https://www.facebook.com/takeofftravelsbd/" target="_blank">
             <img src="facebook.png" alt="facebook" />
           </Link>
-          <Link href="https://linkedin.com" target="_blank">
+          <Link href="https://bd.linkedin.com/jobs/view/assistant-manager-at-takeoff-travels-4315277692" target="_blank">
             <img src="in.png" alt="linkedin" />
           </Link>
         </div>
